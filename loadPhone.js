@@ -6,11 +6,12 @@ const loadPhone = async (searchText) =>{
     
 }
 
-const phoneContainer = document.getElementById('phone-container');
-phoneContainer.textContent = '';
+
 
 
 const displayPhones = (phones) =>{
+    const phoneContainer = document.getElementById('phone-container');
+    phoneContainer.textContent = '';
     phones.forEach(phone => {
 
         const phoneCard = document.createElement('div');
